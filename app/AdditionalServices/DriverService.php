@@ -2,6 +2,8 @@
 
 namespace App\AdditionalServices;
 
+use App\Tariffs\TariffAbstract;
+
 require_once './vendor/autoload.php';
 
 class DriverService implements AdditionalDriverInterface {

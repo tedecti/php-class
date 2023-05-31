@@ -1,5 +1,7 @@
 <?php
-namespace App;
+namespace App\AdditionalServices;
+
+use App\Tariffs\TariffAbstract;
 
 interface AdditionalGpsInterface
 {

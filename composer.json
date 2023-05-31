@@ -1,14 +1,5 @@
 {
-    "name": "vendor/class",
-    "type": "composer-plugin",
-    "require": {},
     "autoload": {
-        "classmap": [
-            "app/",
-            "app/src/",
-            "app/src/Tariffs/",
-            "app/src/AdditionalServices/",
-            "app/public/"
-        ]
+        "psr-4": {"App\\": "app/"}
     }
 }

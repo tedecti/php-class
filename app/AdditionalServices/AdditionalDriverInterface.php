@@ -1,7 +1,7 @@
 <?php
-namespace App;
+namespace App\AdditionalServices;
 
-require_once './vendor/autoload.php';
+use App\Tariffs\TariffAbstract;
 
 interface AdditionalDriverInterface
 {

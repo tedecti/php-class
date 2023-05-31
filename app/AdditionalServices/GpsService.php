@@ -1,6 +1,8 @@
 <?php
 
-namespace App\AdditionalInterfaces;
+namespace App\AdditionalServices;
+
+use App\Tariffs\TariffAbstract;
 
 require_once './vendor/autoload.php';
 

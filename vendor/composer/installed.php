@@ -2,18 +2,18 @@
     'root' => array(
         'pretty_version' => '1.0.0+no-version-set',
         'version' => '1.0.0.0',
-        'type' => 'composer-plugin',
+        'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'reference' => NULL,
-        'name' => 'vendor/class',
+        'name' => '__root__',
         'dev' => true,
     ),
     'versions' => array(
-        'vendor/class' => array(
+        '__root__' => array(
             'pretty_version' => '1.0.0+no-version-set',
             'version' => '1.0.0.0',
-            'type' => 'composer-plugin',
+            'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'reference' => NULL,

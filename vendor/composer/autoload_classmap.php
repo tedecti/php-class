@@ -6,17 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\AdditionalDriverInterface' => $baseDir . '/app/AdditionalDriverInterface.php',
-    'App\\AdditionalGpsInterface' => $baseDir . '/app/AdditionalGpsInterface.php',
-    'App\\AdditionalInterfaces\\GpsService' => $baseDir . '/app/AdditionalServices/GpsService.php',
-    'App\\AdditionalServices\\DriverService' => $baseDir . '/app/AdditionalServices/DriverService.php',
-    'App\\DriverService' => $baseDir . '/app/AdditionalServicesTrait.php',
-    'App\\DriverServiceTrait' => $baseDir . '/app/AdditionalServicesTrait.php',
-    'App\\GpsService' => $baseDir . '/app/AdditionalServicesTrait.php',
-    'App\\GpsServiceTrait' => $baseDir . '/app/AdditionalServicesTrait.php',
-    'App\\TariffAbstract' => $baseDir . '/app/TariffAbstract.php',
-    'App\\Tariffs\\BaseTariff' => $baseDir . '/app/Tariffs/BaseTariff.php',
-    'App\\Tariffs\\StudentTariff' => $baseDir . '/app/Tariffs/StudentTariff.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'HourlyTariff' => $baseDir . '/app/Tariffs/HourlyTariff.php',
 );

@@ -2,8 +2,6 @@
 
 namespace App\Tariffs;
 
-require_once './vendor/autoload.php';
-
 class BaseTariff extends TariffAbstract
 {
     public function __construct($priceKm, $priceHours)

@@ -6,25 +6,29 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit179c90473eeb11d7e3d0dd2961eb20fc
 {
+    public static $prefixLengthsPsr4 = array (
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
+    );
+
     public static $classMap = array (
-        'App\\AdditionalDriverInterface' => __DIR__ . '/../..' . '/app/AdditionalDriverInterface.php',
-        'App\\AdditionalGpsInterface' => __DIR__ . '/../..' . '/app/AdditionalGpsInterface.php',
-        'App\\AdditionalInterfaces\\GpsService' => __DIR__ . '/../..' . '/app/AdditionalServices/GpsService.php',
-        'App\\AdditionalServices\\DriverService' => __DIR__ . '/../..' . '/app/AdditionalServices/DriverService.php',
-        'App\\DriverService' => __DIR__ . '/../..' . '/app/AdditionalServicesTrait.php',
-        'App\\DriverServiceTrait' => __DIR__ . '/../..' . '/app/AdditionalServicesTrait.php',
-        'App\\GpsService' => __DIR__ . '/../..' . '/app/AdditionalServicesTrait.php',
-        'App\\GpsServiceTrait' => __DIR__ . '/../..' . '/app/AdditionalServicesTrait.php',
-        'App\\TariffAbstract' => __DIR__ . '/../..' . '/app/TariffAbstract.php',
-        'App\\Tariffs\\BaseTariff' => __DIR__ . '/../..' . '/app/Tariffs/BaseTariff.php',
-        'App\\Tariffs\\StudentTariff' => __DIR__ . '/../..' . '/app/Tariffs/StudentTariff.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'HourlyTariff' => __DIR__ . '/../..' . '/app/Tariffs/HourlyTariff.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit179c90473eeb11d7e3d0dd2961eb20fc::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit179c90473eeb11d7e3d0dd2961eb20fc::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInit179c90473eeb11d7e3d0dd2961eb20fc::$classMap;
 
         }, null, ClassLoader::class);

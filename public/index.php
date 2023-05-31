@@ -1,5 +1,9 @@
 <?php
-require_once "../vendor/autoload.php";
+require_once "./vendor/autoload.php";
+
+use App\AdditionalServices\DriverService;
+use App\AdditionalServices\GpsService;
+use App\Tariffs\BaseTariff;
 
 $baseTariff = new BaseTariff(15, 8);
 $gpsService = new GpsService(15, 10);
